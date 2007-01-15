@@ -1,0 +1,10 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+tabbrowser .tabbrowser-strip tab,
+tabbrowser#content .tabbrowser-strip tab,
+#contentEnclosure tabbrowser#content .tabbrowser-strip tab,
+#browser #appcontent tabbrowser#content .tabbrowser-strip tab
+{
+	-moz-binding: url("./tabextensions.xml#tab") !important;
+}
